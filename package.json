@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-shopping-cart",
+  "version": "1.0.0",
+  "author": "Dariel Dilone Espinal",
+  "email": "mrdariel2@gmail.com",
+  "private": false,
+  "scripts": {
+    "start": "node app.js",
+    "start_azure_debug": "if [[ ${APPSVC_TUNNEL_PORT} != \"\" ]]; then node --inspect=0.0.0.0:$APPSVC_TUNNEL_PORT ./bin/www; else npm run start; fi"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "^4.16.4",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.15.3",
+    "hbs": "^4.2.0",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.3.0",
+    "morgan": "^1.9.1",
+    "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
